@@ -1,7 +1,7 @@
 #Compiled Version
 The cyrusauthldap.so file was made from the source file which is also in this 
 directory, following the instructions on the ZNC wiki, using the make method.
-It is compiled for ZNC 1.4.
+
 You can try simply skipping to the Running the Module section below and using
 this .so file, or keep reading if that doesn't work.
 
@@ -14,6 +14,7 @@ to the source available on github or elsewhere.
 However, for cyrusauthldap to work, cyrusauthldapLDFLAGS := -lsasl2 has to be
 added to the Makefile in modules/ in the souce. Try "cat Makefile | grep
 cyrusauth" to see that this has been done for cyrusauth as well.
+
 Note, you may need to run ./configure with --enable-cyrus for this to work.
 Similarly, you most likely need to have installed znc with cyrusauth enabled,
 which has been the default since 1.0.
