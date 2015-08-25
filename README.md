@@ -1,14 +1,7 @@
-#Compiled Version
-The cyrusauthldap.so file was made from the source file which is also in this 
-directory, following the instructions on the ZNC wiki, using the make method.
-
-You can try simply skipping to the Running the Module section below and using
-this .so file, or keep reading if that doesn't work.
-
 #Source/Credit
 The original cyrusauth file modified to create this one was retrieved using
 apt-get source znc on Debian "Jessie". The changes should work if copied as-is
-to the source available on github or elsewhere.
+to the source available on github or elsewhere, as is relevant to your system.
 
 #Compiling the Module
 However, for cyrusauthldap to work, cyrusauthldapLDFLAGS := -lsasl2 has to be
